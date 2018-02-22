@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mainlist_bg2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layer_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/header_bg" >
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="@dimen/header_height"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:onClick="onBackActivity"
+            android:scaleType="center"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/txt_headertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Hi"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontsize_title" />
+
+        <ImageView
+            android:id="@+id/icon_more"
+            android:layout_width="@dimen/header_height"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="onMore"
+            android:scaleType="center"
+            android:src="@drawable/icon_hamburger" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/layer_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:background="@color/mainlist_bg2"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_giftphoto"
+                android:layout_width="fill_parent"
+                android:layout_height="145dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/banner_opening_hours" />
+
+            <TextView
+                android:id="@+id/txt_gifttitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/margin_small"
+                android:paddingLeft="@dimen/margin_medium"
+                android:paddingRight="@dimen/margin_medium"
+                android:paddingTop="@dimen/margin_normal"
+                android:text="@string/strOpeningDesc1"
+                android:textColor="@color/font_color2"
+                android:textSize="@dimen/fontsize2" />
+			
+            <LinearLayout
+                android:id="@+id/table_opening_hours"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+            
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:text="@string/strOpeningDesc2"
+                android:textColor="@color/font_color3"
+                android:textSize="@dimen/fontsize5" />
+
+            <Button
+                android:id="@+id/button_launch_website"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:background="@color/header_bg"
+                android:drawableLeft="@drawable/icon_laptop"
+                android:drawablePadding="@dimen/margin_small"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/margin_normal"
+                android:textColor="@android:color/white"
+                android:text="@string/strOpeningLaunchWebsite"
+                android:textSize="@dimen/fontsize4" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

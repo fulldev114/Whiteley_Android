@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/view_goto_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_favourite_show"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/select_store_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/margin_normal"
+            android:paddingTop="@dimen/margin_small" >
+
+            <ImageView
+                android:id="@+id/img_favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:src="@drawable/icon_favourite_off_plusoffer" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:text="Apple Store"
+                android:textColor="@color/font_color1"
+                android:textSize="@dimen/fontsize5" />
+
+            <ImageView
+                android:id="@+id/img_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:src="@drawable/icon_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_favourite_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="-5dp" >
+
+            <ImageView
+                android:id="@+id/img_favourite_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_added_favourites_below2" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layer_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/header_bg" >
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="@dimen/header_height"
+            android:layout_height="@dimen/header_height"
+            android:layout_centerVertical="true"
+            android:onClick="onBackActivity"
+            android:scaleType="center"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/txt_headertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Hi"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontsize_title" />
+
+        <ImageView
+            android:id="@+id/icon_more"
+            android:layout_width="@dimen/header_height"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="onMore"
+            android:scaleType="center"
+            android:src="@drawable/icon_hamburger" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/layer_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainlist_bg2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layer_shoplogo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_shoplogo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/margin_minimal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:background="@drawable/logo_divider" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txt_shoptitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hi"
+                        android:textColor="@color/font_color2"
+                        android:textSize="@dimen/fontsize2" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+<!--  
+                        <TextView
+                            android:id="@+id/txt_shoplocation"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="hi"
+                            android:textColor="@color/font_color2"
+                            android:textSize="@dimen/fontsize6"
+                            android:textStyle="bold" />
+                            -->
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginRight="@dimen/margin_normal"
+                            android:src="@drawable/icon_shop_open"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_shopphoto"
+                android:layout_width="fill_parent"
+                android:layout_height="170dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_wide" />
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:padding="@dimen/margin_medium"
+                android:text="@string/strshopdetail_desc1"
+                android:textColor="@color/font_color3"
+                android:textSize="@dimen/fontsize4" />
+
+          
+            
+            <Button
+                android:id="@+id/tbtn_map"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:background="@color/header_bg"
+                android:drawableLeft="@drawable/icon_map"
+                android:drawablePadding="@dimen/margin_small"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/margin_normal"
+                android:text="@string/strshopdetail_viewstore"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/fontsize4" />
+
+            <Button
+                android:id="@+id/tbtn_phonecall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:background="@color/header_bg"
+                android:drawableLeft="@drawable/icon_phone"
+                android:drawablePadding="@dimen/margin_small"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/margin_normal"
+                android:text="@string/strshopdetail_call"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/fontsize4" />
+
+            <Button
+                android:id="@+id/tbtn_laptop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:background="@color/header_bg"
+                android:drawableLeft="@drawable/icon_laptop"
+                android:drawablePadding="@dimen/margin_small"
+                android:gravity="left|center_vertical"
+                android:padding="@dimen/margin_normal"
+                android:text="@string/strshopdetail_website"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/fontsize4" />
+
+            <ToggleButton
+                android:id="@+id/tbtn_open_hours"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mainlist_bg1"
+                android:drawableRight="@drawable/selector_open_hour"
+                android:gravity="left|center_vertical"
+                android:onClick="onOpenHours"
+                android:paddingBottom="@dimen/margin_medium"
+                android:paddingLeft="@dimen/margin_normal"
+                android:paddingRight="@dimen/margin_normal"
+                android:paddingTop="@dimen/margin_medium"
+                android:textColor="@color/font_color2"
+                android:textOff="@string/strshopdetail_openhours"
+                android:textOn="@string/strshopdetail_openhours"
+                android:textSize="@dimen/fontsize2" />
+
+            <LinearLayout
+                android:id="@+id/layer_addhours"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_small"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="@android:color/white" />
+
+            <Button
+                android:id="@+id/tbtn_offers"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mainlist_bg1"
+                android:drawableLeft="@drawable/icon_detail_offers"
+                android:drawablePadding="@dimen/margin_normal"
+                android:drawableRight="@drawable/icon_arrow"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="@dimen/margin_medium"
+                android:paddingLeft="@dimen/margin_normal"
+                android:paddingRight="@dimen/margin_normal"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/strshopdetail_no_offer"
+                android:textColor="@color/font_color2"
+                android:textSize="@dimen/fontsize2" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="@android:color/white" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/layer_likestoretitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mainlist_bg1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/margin_small"
+                    android:paddingRight="@dimen/margin_small" >
+
+                    <TextView
+                        android:id="@+id/txt_likestoretitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_large"
+                        android:text="@string/strshopdetail_likethisstore"
+                        android:textColor="@color/font_color2"
+                        android:textSize="@dimen/fontsize1" />
+
+                    <TextView
+                        android:id="@+id/txt_likestorecontent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_likestoretitle"
+                        android:layout_marginBottom="@dimen/margin_normal"
+                        android:layout_marginTop="@dimen/margin_normal"
+                        android:text="@string/strshopdetail_likethisstore2"
+                        android:textColor="@color/font_color3"
+                        android:textSize="@dimen/fontsize5" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layer_likestoretitle"
+                    android:background="@drawable/store_similar" >
+
+                    <ToggleButton
+                        android:id="@+id/tbtn_setfavourite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/selector_favourite"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_favourite_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/back_added_favourites_below"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_small"
+                android:paddingRight="@dimen/margin_small" >
+
+                <TextView
+                    android:id="@+id/txt_similartitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:text="@string/strshopdetail_similarstore"
+                    android:textColor="@color/font_color2"
+                    android:textSize="@dimen/fontsize1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layer_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

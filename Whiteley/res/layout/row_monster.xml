@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img_monster"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:scaleType="fitXY"
+        android:src="@drawable/empty_card" />
+
+    <Button
+        android:id="@+id/button_remove"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:background="@drawable/bg_round5_white_1"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/fontsize6"
+        android:text="REMOVE" />
+
+</LinearLayout>

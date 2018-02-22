@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_notification_tooltip"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_normal"
+        android:paddingRight="@dimen/margin_normal"
+        android:paddingBottom="@dimen/margin_medium"
+        android:paddingTop="@dimen/margin_30dp" >
+
+        <LinearLayout
+            android:id="@+id/view_bluetooth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/icon_notify_bluetooth" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/margin_medium"
+                android:paddingRight="@dimen/margin_medium"
+                android:text="@string/notification_bluetooth"
+                android:textColor="@color/font_color1"
+                android:textSize="@dimen/fontsize5" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="32dp"
+                android:src="@drawable/disclosure_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_separator1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/bg_divider_line_repeat"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/view_location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/icon_notify_location" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/margin_medium"
+                android:paddingRight="@dimen/margin_medium"
+                android:text="@string/notification_location"
+                android:textColor="@color/font_color1"
+                android:textSize="@dimen/fontsize5" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="32dp"
+                android:src="@drawable/disclosure_arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_separator2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/bg_divider_line_repeat"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/icon_notification" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/margin_medium"
+                android:paddingRight="@dimen/margin_medium"
+                android:text="@string/notification_local_notify"
+                android:textColor="@color/font_color1"
+                android:textSize="@dimen/fontsize5" />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="32dp"
+                android:src="@drawable/disclosure_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

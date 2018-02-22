@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_easter_back"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layer_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/margin_normal"
+        android:paddingRight="@dimen/margin_normal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/monster_logo_new"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/monster_flay"
+                android:contentDescription="@string/app_name" />
+
+            <ImageButton
+                android:id="@+id/button_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/overlap_region"
+                android:src="@drawable/monster_btn_start"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/txt_desc1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:text="@string/strMonsterDesc14"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontsize4" />
+        
+        <TextView
+            android:id="@+id/txt_desc2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:text="@string/strMonsterDesc15"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontsize4" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layer_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@android:color/transparent" >
+
+        <ImageButton
+            android:id="@+id/button_home"
+            android:layout_width="@dimen/header_height"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center"
+            android:src="@drawable/icon_home"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+</RelativeLayout>

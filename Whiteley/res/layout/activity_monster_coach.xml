@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layer_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/color_easter_back"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="@dimen/margin_30dp"
+        android:paddingTop="@dimen/margin_normal" >
+
+        <TextView
+            android:id="@+id/txt_desc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/strMonsterDesc2"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontsize1" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_round10_white_1"
+            android:onClick="onViewMonster"
+            android:paddingBottom="@dimen/margin_medium"
+            android:paddingLeft="@dimen/margin_extra"
+            android:paddingRight="@dimen/margin_extra"
+            android:paddingTop="@dimen/margin_medium"
+            android:text="@string/next_uppercase"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontsize3" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/button_next"
+            android:layout_below="@id/txt_desc1"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/button_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:onClick="onClose"
+        android:src="@drawable/monster_icon_close" />
+
+</RelativeLayout>

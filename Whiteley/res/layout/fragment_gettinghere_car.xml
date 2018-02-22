@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mainlist_bg2" >
+
+    <LinearLayout
+        android:id="@+id/layer_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainlist_bg2"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_normal"
+        android:paddingRight="@dimen/margin_normal" >
+
+        <TextView
+            android:id="@+id/txt_traveltitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/margin_small"
+            android:text="@string/strgettinghere4"
+            android:textColor="@color/font_color2"
+            android:textSize="@dimen/fontsize2" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/view_bus_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/txt_bus_desc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/margin_normal"
+                    android:textColor="@color/font_color3"
+                    android:textSize="@dimen/fontsize5"
+                    android:maxLines="10"
+                    android:singleLine="false" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/view_train_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/txt_train_desc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/margin_normal"
+                    android:textColor="@color/font_color3"
+                    android:textSize="@dimen/fontsize5"
+                    android:maxLines="10"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_car_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_car_desc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/margin_normal"
+                    android:textColor="@color/font_color3"
+                    android:textSize="@dimen/fontsize5"
+                    android:maxLines="10"
+                    android:singleLine="false" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

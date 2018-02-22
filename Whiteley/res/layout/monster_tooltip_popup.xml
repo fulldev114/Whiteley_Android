@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_normal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_monster_tooltip"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_large"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium"
+        android:paddingTop="@dimen/margin_medium" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/img_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:src="@drawable/icon_warning" />
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_medium"
+                android:paddingRight="@dimen/margin_small"
+                android:singleLine="true"
+                android:text="WOAH THERE PARTNER!"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/fontsize5" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:gravity="center_horizontal"
+            android:text="TO PLAY THIS GAME YOU MUST TURN ON BLUETOOTH AND ENABLE LOCATION SHARING IN THE APP SETTINGS."
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontsize6" />
+
+        <Button
+            android:id="@+id/button_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/bg_round10_white_1"
+            android:padding="@dimen/margin_medium"
+            android:text="APP SETTINGS"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontsize4" />
+    </LinearLayout>
+
+</LinearLayout>

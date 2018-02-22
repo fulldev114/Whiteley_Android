@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+	
+    <RelativeLayout
+        android:id="@+id/layer_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/header_bg" >
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="@dimen/header_height"
+            android:layout_height="@dimen/header_height"
+            android:layout_centerVertical="true"
+            android:onClick="onBackActivity"
+            android:scaleType="center"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/txt_headertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/str_fb_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontsize_title" />
+
+        <ImageView
+            android:id="@+id/icon_more"
+            android:layout_width="@dimen/header_height"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="onMore"
+            android:scaleType="center"
+            android:src="@drawable/icon_hamburger" />
+        
+    </RelativeLayout>
+    
+	<ScrollView 
+	    android:id="@+id/scroll_main"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    >
+	    <LinearLayout
+	        android:id="@+id/layer_main"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:focusable="true"
+	        android:focusableInTouchMode="true"
+	        android:orientation="vertical" >
+      
+	 <!-- Kids Section -->
+	        <RelativeLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/margin_normal"
+	                android:layout_marginTop="30dp"
+	                android:layout_marginRight="@dimen/margin_normal">
+	
+	                <View
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="1dp"
+	                    android:layout_centerVertical="true"
+	                    android:background="@color/color_fb_line" />
+	
+	                <TextView
+	                    android:layout_width="170dp"
+	                    android:layout_height="40dp"
+	                    android:layout_centerInParent="true"
+	                    android:background="@android:color/white"
+	                    android:gravity="center"
+	                    android:singleLine="false"
+	                    android:layout_marginLeft="@dimen/margin_small"
+	                  	android:layout_marginRight="@dimen/margin_small"                   
+	                    android:text="@string/str_fb_kids"
+	                    android:textColor="@color/font_color1"
+	                    android:textSize="@dimen/fontsize6"/>
+	            </RelativeLayout>
+	            
+	          <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal"
+	                android:layout_marginLeft="@dimen/margin_medium"
+	                android:layout_marginRight="@dimen/margin_medium"
+	                android:layout_marginTop="10dp"
+	                 >
+	                
+	            <TextView
+                    android:id="@+id/txt_kids_yes"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/margin_medium"
+                    android:paddingTop="@dimen/margin_medium"
+                    android:text="@string/str_fb_yes"
+                    android:textColor="@color/font_color2"
+                    android:textSize="@dimen/fontsize6" />
+
+                <TextView
+                    android:id="@+id/txt_kids_no"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/margin_medium"
+                    android:paddingTop="@dimen/margin_medium"
+                    android:text="@string/str_fb_no"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/fontsize6" />
+                
+	            </LinearLayout>
+	            
+	     <!-- Walk Section -->   
+	         <RelativeLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/margin_normal"
+	                android:layout_marginTop="30dp"
+	                android:layout_marginRight="@dimen/margin_normal">
+	
+	                <View
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="1dp"
+	                    android:layout_centerVertical="true"
+	                    android:background="@color/color_fb_line" />
+	
+	                <TextView
+	                    android:layout_width="180dp"
+	                    android:layout_height="40dp"
+	                    android:layout_centerInParent="true"
+	                    android:background="@android:color/white"
+	                    android:gravity="center"
+	                    android:singleLine="false"
+	                    android:layout_marginLeft="@dimen/margin_small"
+	                  	android:layout_marginRight="@dimen/margin_small"                   
+	                    android:text="@string/str_fb_walk"
+	                    android:textColor="@color/font_color1"
+	                    android:textSize="@dimen/fontsize6"/>
+	            </RelativeLayout>
+			
+		
+	          <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal"
+	                android:layout_marginLeft="@dimen/margin_medium"
+	                android:layout_marginRight="@dimen/margin_medium"
+	                android:layout_marginTop="10dp"
+	                 >
+	                
+	            <TextView
+                    android:id="@+id/txt_walk_yes"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/margin_medium"
+                    android:paddingTop="@dimen/margin_medium"
+                    android:text="@string/str_fb_yes"
+                    android:textColor="@color/font_color2"
+                    android:textSize="@dimen/fontsize6" />
+
+                <TextView
+                    android:id="@+id/txt_walk_no"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/margin_medium"
+                    android:paddingTop="@dimen/margin_medium"
+                    android:text="@string/str_fb_no"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/fontsize6" />
+                
+	            </LinearLayout>
+	            
+	    <!-- Suggestion Section -->   
+	        <RelativeLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/margin_normal"
+	                android:layout_marginTop="30dp"
+	                android:layout_marginRight="@dimen/margin_normal">
+	
+	                <View
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="1dp"
+	                    android:layout_centerVertical="true"
+	                    android:background="@color/color_fb_line" />
+	
+	                <TextView
+	                    android:id="@+id/txt_price"
+	                    android:layout_width="210dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerInParent="true"
+	                    android:background="@android:color/white"
+	                    android:gravity="center"
+	                    android:singleLine="false"
+	                    android:layout_marginLeft="@dimen/margin_normal"
+	                  	android:layout_marginRight="@dimen/margin_normal"                   
+	                    android:text="@string/str_fb_suggest"
+	                    android:textColor="@color/font_color1"
+	                    android:textSize="@dimen/fontsize6" />
+	            </RelativeLayout>
+		                
+	         <RelativeLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/margin_medium"
+	                android:layout_marginTop="16dp"
+	                android:layout_marginRight="@dimen/margin_medium">
+	                 <!--
+					<Spinner
+        				android:id="@+id/spinner_price"
+				        android:layout_width="fill_parent"
+				        android:layout_height="45dp"
+				        android:background="@drawable/bg_round_gray"
+				        android:gravity="center"
+				         />
+					 -->
+					<EditText
+	                    android:id="@+id/edt_suggest"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="fill_parent"
+	                    android:background="@drawable/bg_round_gray"
+	                    android:gravity="center"
+	                    android:singleLine="true"
+	                    android:paddingBottom="@dimen/margin_medium"
+	                    android:paddingTop="@dimen/margin_medium"
+	                    android:hint="@string/str_fb_suggest_hint"
+	                    android:textColor="@android:color/black"
+                		android:textColorHint="@color/color_hint"
+	                    android:textSize="@dimen/fontsize5" />
+	            </RelativeLayout>       
+	              
+	         <RelativeLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/margin_normal"
+	                android:layout_marginTop="30dp"
+	                android:layout_marginRight="@dimen/margin_normal" >
+	
+	                <View
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="1dp"
+	                    android:layout_centerVertical="true"
+	                    android:background="@color/color_fb_line" />
+	
+	                <TextView
+	                    android:layout_width="150dp"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerInParent="true"
+	                    android:background="@android:color/white"
+	                    android:gravity="center"
+	                    android:singleLine="false"
+	                    android:layout_marginLeft="@dimen/margin_normal"
+	                  	android:layout_marginRight="@dimen/margin_normal"                   
+	                    android:text="@string/str_fb_other"
+	                    android:textColor="@color/font_color1"
+	                    android:textSize="@dimen/fontsize6" />
+	            </RelativeLayout>
+	            
+	         <RelativeLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/margin_medium"
+	                android:layout_marginTop="16dp"
+	                android:layout_marginRight="@dimen/margin_medium">
+
+					<EditText
+	                    android:id="@+id/edt_feedback"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="100dp"
+	                    android:background="@drawable/bg_round_gray"
+	                    android:paddingBottom="@dimen/margin_medium"
+	                    android:paddingTop="@dimen/margin_medium"
+	                  	android:paddingLeft="@dimen/margin_small"
+	                    android:paddingRight="@dimen/margin_small"
+	                    android:textColor="@android:color/black"
+                		android:textColorHint="@color/color_hint"
+	                    android:textSize="@dimen/fontsize5" />
+	            </RelativeLayout>  
+	          <RelativeLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/margin_medium"
+	                android:layout_marginTop="25dp"
+	                android:layout_marginRight="@dimen/margin_medium">
+	
+	                <Button
+		                android:id="@+id/button_submit"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_centerInParent="true"
+		                android:paddingLeft="25dp"
+		                android:paddingRight="20dp"
+		                android:drawableRight="@drawable/feedback_arrow"
+		                android:text="@string/str_fb_submit"
+		                android:textColor="@color/white" />
+	
+	            </RelativeLayout> 
+	            
+	           <RelativeLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/margin_medium"
+	                android:layout_marginTop="22dp"
+	               	android:layout_marginBottom="22dp"     
+	                android:layout_marginRight="@dimen/margin_medium">
+		
+	                <TextView
+	                    android:id="@+id/txt_feedback_skip"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerInParent="true"
+	                    android:text="@string/str_fb_skip"
+	                    android:gravity="center"                  
+	                    android:textColor="@color/header_bg"
+	                    android:textSize="@dimen/fontsize6" />
+	            </RelativeLayout> 
+	            
+	        <RelativeLayout
+	            android:id="@+id/view_body"
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1" />
+	    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

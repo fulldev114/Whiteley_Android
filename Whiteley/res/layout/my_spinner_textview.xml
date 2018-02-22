@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/spinnerItemStyle"
+    android:id="@+id/spinner_textview"
+	android:textColor="@color/font_color1"
+	android:layout_height="fill_parent"
+    android:layout_width="fill_parent" 
+    android:gravity="center" 
+    android:text="@string/str_fb_price_value"
+    android:paddingBottom="5dp" 
+    android:paddingTop="5dp" />

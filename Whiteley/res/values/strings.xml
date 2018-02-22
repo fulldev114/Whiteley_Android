@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Whiteley</string>
+    <string name="ble_not_supported">BLE is not supported.\nYou can\'t use the iBeacon functionality of this app.</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.\nYou can\'t use the iBeacon functionality of this app.</string>
+    <string name="to_use_ibeacon">To use the iBeacon functionality of this app, please turn on your bluetooth when in the shopping centre</string>
+    <string name="confirm_title">Confirm</string>
+    <string name="are_you_exit">Are you sure exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="action_settings">Settings</string>
+    <string name="header_title">Title</string>
+    <string name="header_subtitle">Subtitle</string>
+
+    <!-- Facility Type -->
+    <string-array name="facility_type">
+        <item>ATM</item>
+        <item>Photo Booths</item>
+        <item>Car Parking</item>
+        <item>Toilets/Baby Change</item>
+        <item>Information Pod</item>
+        <item>Lost &amp; Found</item>
+        <!-- <item>Phone Charging</item> -->
+        <!-- item>Recycling Bins</item -->
+        <!-- item>Gift Card</item -->
+        <!-- item>Kiddies\' Ride</item -->
+        <!-- item>Shop Mobility</item -->
+        <!-- item>iBeacon Locations</item -->
+    </string-array>
+
+    <!-- home page -->
+    <string-array name="store_titlearray">
+        <item>Centre Map</item>
+        <item>Our Stores</item>
+        <item>Latest Offers</item>
+        <item>Food Outlets</item>
+        <item>Cinema Times</item>
+        <item>Rock Up</item>
+        <item>Getting Here</item>
+        <item>Our Facilities</item>
+        <item>Latest Events</item>
+        <item>Opening Hours</item>
+        <!-- item>Easter Egg Hunt</item -->
+        <item>Sign Up</item>
+        <item>Feedback</item>
+    </string-array>
+    <string-array name="store_descarray">
+        <item>FIND YOUR WAY</item>
+        <item>BROWSE DIRECTORY</item>
+        <item>FOR WHITELEY SHOPPERS</item>
+        <item>GRAB A BITE</item>
+        <item>CINEMA TIMES</item>
+        <item>ROCK UP</item>
+        <item>TO AND FROM THE CENTRE</item>
+        <item>AT THE CENTRE</item>
+        <item>FOR WHITELEY SHOPPERS</item>
+        <item>OPENING HOURS</item>
+        <!-- item>FIND THE HIDDEN EASTER EGG</item-->
+        <item>SIGN UP</item>
+        <item>FEEDBACK</item>
+    </string-array>
+    <string-array name="store_category">
+        <item>Specialist shops &amp; services</item>
+        <item>Phones &amp; electronics</item>
+        <item>Ladies fashion &amp; accessories</item>
+        <item>Men\'s fashion &amp; accessories</item>
+        <item>Sport, leisure &amp; entertainment</item>
+        <item>Footwear</item>
+        <item>Jewellery</item>
+        <item>Baby &amp; children\'s wear</item>
+        <item>Cards &amp; gifts</item>
+        <item>Food shops</item>
+        <item>Health &amp; Beauty</item>
+        <item>Toys &amp; games</item>
+        <item>Stationery, books &amp; news</item>
+        <item>Department stores</item>
+        <item>Financial</item>
+        <item>Living &amp; home</item>
+        <item>Travel Agents</item>
+    </string-array>
+
+    <!-- feedback -->
+    <string name="str_fb_ask">How was your visit to Whiteley?</string>   
+    <string name="str_fb_content">Help us improve your shopping\nexperience by answering 3 short\nquestions about your visit today.</string> 
+    <string name="str_fb_title">Feedback</string>    
+    <string name="str_fb_submit">Submit</string>
+    <string name="str_fb_rate">Rate your visit today</string>
+    <string name="str_fb_suggest">What shop or restaurant would you like to see at Whiteley?</string>
+    <string name="str_fb_suggest_hint">Enter your suggestion</string>
+    <string name="str_fb_price">How much did you spend today?</string>
+    <string name="str_fb_price_value">Select price range</string>
+    <string name="str_fb_walk">Do you work within walking distance of Whiteley?</string>
+    <string name="str_fb_other">Any other feedback?</string>
+    <string name="str_fb_kids">Do you have children under 16 years of age?</string>
+    <string name="str_fb_skip"><u>Skip</u></string>
+    <string name="str_fb_result">Thank you for your feedback!</string>
+    <string name="str_fb_welcome">YOU\'RE WELCOME</string>
+    <string name="str_fb_yes">YES</string>
+    <string name="str_fb_no">NO</string>
+    <string name="str_fb_not_right">Not right now</string>
+    <string name="str_fb_ok">OK, let\'s go!</string>
+    <string name="str_fb_freq_value">Fequency</string>
+    
+    <!-- our store page -->
+    <string name="str_orbrowse">Or browse by</string>
+    <string name="strHint">Search by store name</string>
+    <string name="strHint2">Search stores in this category</string>
+    <string name="strPagerName1">STORE NAME</string>
+    <string name="strPagerName2">CATEGORY</string>
+    <string name="strToygame_title">Toys &amp; Games</string>
+    <string name="strEmptyStore">There are no stores matching your search.\nPlease check your spelling or browse our store directory.</string>
+    <string name="strStoreNewRetailer">New Retailer Coming Soon</string>
+    
+    <!-- shop detail page -->
+    <string name="strshop_title1">Apple Store</string>
+    <string name="strshop_desc">Upper Mall</string>
+    <string name="strshopdetail_desc">The Apple Store is the best place to try all Apple`s products and find greate accessories.
+        Our Specialists will take the time to answer your questions and set up your new Apple product just the way you want it.
+        You can learn something new in a free workshop.
+        Consult with the Business Team about the perfect solutions for your cmpany.
+        Or visit the Genius Bar to get hands-on technical support.
+        Learn more at www.apple.com/uk/retail or download the Apple Store app from the App Store.</string>
+    <string name="strshopdetail_desc1">The Apple Store is the best place to try all Apple`s products and find greate accessories.
+        </string>
+    <string name="strshopdetail_viewstore">View store on centre map</string>
+    <string name="strshopdetail_call">Tap to call store: </string>
+    <string name="strshopdetail_website">Launch store website</string>
+    <string name="strshopdetail_openhours">Opening Hours</string>
+    <string name="strshopdetail_offers_available">Offers available</string>
+    <string name="strshopdetail_no_offer">No Offers</string>
+    <string name="strshopdetail_likethisstore">Like this store?</string>
+    <string name="strshopdetail_likethisstore2">Add to favourites to get personalised offers, events, notifications and more.</string>
+    <string name="strshopdetail_similarstore">Similar Stores</string>
+
+    <!-- offer detail page -->
+    <string name="stroffer_title">Springtime savings at The Fragrance Shop</string>
+    <string name="stroffer_desc">\'Spray a little happiness\' this springtime with some scent-sational savings at The Fragrance Shop and the Springtime Scents promotion.\n\n
+        Celebrate the arrival of Spring with a scent-sational new fragrance with up to 60% off selected lines.\n\n
+        Sparkle like a diamond this Spring with the Armani Diamonds for her gift set which includes a 50ml EDT and a 75ml body lotion. You can get all this for just €13.00.\n\n
+        Guys can grab the energizing and fresh fragrance Boss Bottled Sport. The 100ml EDT is now only €37.00, that\`s a massive €21.00 saving.\n\n
+        For those with a dash of sophistication, The One from Dolce &amp; Gabanna is a charming scent with woody oriental notes and a great €10.00 saving when you get the 50ml EDT for just €39.00.\n\n
+        Hurry, these great savings won\'t be around for long.</string>
+        <string name="stroffer_desc1">\'Spray a little happiness\' this springtime with some scent-sational savings at The Fragrance Shop and the Springtime Scents promotion.</string>
+    <string name="stroffer_shopname">The Fragrance Shop</string>
+    <string name="stroffer_viewstore">View store on centre map</string>
+    <string name="strofferdetail_moreoffer">More Great Offers</string>
+    <string name="stroffer_empty">There are currently no offers - check back soon.</string>
+
+    <!-- latest event page -->
+    <string name="sorry">Sorry</string>
+    <string name="strevent2">No events are currently scheduled - check back soon.</string>
+    <string name="strevent3">Easter Shopping Day at Hotel Chocolat</string>
+    <string name="strevent4">There\'s no Easter quite like one created by Hotel Chocolat, and this year is no different.
+        If you drop by the store on Thursday 26 March you\'ll find chocolate tasting, a competition to win a €50 hamper as well as an exclusive 15% discount.\n\n
+        While you\'re there why not browse their selection of fun Easter gifts and treats - ideal for parties, games and celebrating the season.</string>
+    <string name="strevent5">Other Events</string>
+
+    <!-- gift card -->
+    <string name="strgiftcard1">Whiteley Gift Card</string>
+    <string name="strgiftcard2">Buying a present? Whiteley Gift Card really is the perfect gift of choice.\n\n
+        Gift card amounts range from €5 up to €500 and you will be able to use the Gift Cards in all shops at Drakes Circus with the exception of: EE, Fuel, Juice, Spudulike, Regus Express and Jack Wills Pop up store.</string>
+    <string name="strgiftcard3">Order a Gift Card</string>
+    <string name="strgiftcard4">Check your balance</string>
+    <string name="strgiftcard5">Terms and conditions</string>
+
+    <!-- getting here -->
+    <string name="strgettinghere1">CAR</string>
+    <string name="strgettinghere2">TRAIN</string>
+    <string name="strgettinghere3">BUS</string>
+    <string name="strgettinghere4">Getting here by</string>
+    <string name="strCarDescription"><![CDATA[Whiteley is located just one mile from Junction 9 on the M27.<br/><br/>After exiting the motorway, follow the signs for \'shopping centre\'.<br/><br/>If you are using a GPS or route finder system, enter PO15 7PD as the destination postcode.<br/><br/>We have 1,300 parking spaces across seven car parks.]]></string>
+    <string name="strTrainDescription"><![CDATA[Swanwick railway station is located within a 25 minute walk from Whiteley Shopping.<br/><br/>There is also a taxi rank located at the station.]]></string>
+    <string name="strBusDescription"><![CDATA[First Group operate a local service to and from Whiteley (Number 28 & 28A).<br/><br/>The nearest bus stop is located on Whiteley Way by Tesco.]]></string>
+
+    <!-- centre map -->
+    <string name="strSearchStores">Search for stores</string>
+    <string name="strLowerMall">Lower Mall</string>
+    <string name="strUpperMall">Upper Mall</string>
+    <string name="strFacilities">Facilities</string>
+    <string name="strSearchStoreNames">Search by store name</string>
+    <string name="strSearchPagerName1">NAME</string>
+    <string name="strSearchPagerName2">CATEGORY</string>
+    <string name="strSelectFloor2">2 Food Court</string>
+    <string name="strSelectFloor1">1 Upper Mall</string>
+    <string name="strSelectFloorGround">G Lower Mall</string>
+    <string name="strSelectedFloor2">Food Court</string>
+    <string name="strSelectedFloor1">Upper Mall</string>
+    <string name="strSelectedFloorGround">Lower Mall</string>
+
+    <!-- monster -->
+    <string name="strMonsterDesc1">READY TO FIND EASTERS?</string>
+    <string name="strMonsterDesc2">HOW TO PLAY</string>
+    <string name="strMonsterDesc3">Turn on your phone`s bluetooth.</string>
+    <string name="strMonsterDesc4">Explore Whiteley with the Easter Egg Hunt app open to find our hidden Easters.</string>
+    <string name="strMonsterDesc5">As you pass the areas we\'ve hidden them, they will appear on your phone.</string>
+    <string name="strMonsterDesc6">YOU HAVEN\'T FOUND ANY EGGS YET</string>
+    <string name="strMonsterDesc6_1">GET SEARCHING!</string>
+    <string name="strMonsterDesc7">WHOO HOOO!</string>
+    <string name="strMonsterDesc8">YOU\'VE JUST FOUND</string>
+    <string name="strMonsterDesc9">GRID</string>
+    <string name="strMonsterDesc10">STACK</string>
+    <string name="strMonsterDesc11">YOUR COLLECTION</string>
+    <string name="strMonsterDesc12">of</string>
+    <string name="strMonsterDesc13">EASTERS</string>
+    <string name="view_monsters">VIEW YOUR EGGS</string>
+    <string name="strMonsterDesc14">VIRTUAL EASTER EGGS ARE HIDDEN THROUGHOUT WHITELEY&#8230;</string>
+    <string name="strMonsterDesc15">TRY TO FIND THEM!</string>
+    <string name="strEggFoundTitle">WELL DONE!</string>
+    <string name="strEggFoundDesc">YOU\'VE FOUND EASTER EGG!</string>
+    <string name="strEggFoundAllTitle">EGGS-CELLENT JOB!</string>
+    <string name="strEggFoundAllDesc">YOU\'VE FOUND ALL THE VITUAL EASTER EGGS!</string>
+    <string name="strEggFoundAllContent">IF YOU COMPLETE THIS BETWEEN <![CDATA[<b>%1$s</b>]]>, YOU CAN COLLECT YOUR \'REAL EGGS\' FROM THE STAFF IN THE TOWN SQUARE. ENJOY!</string>
+    <string name="next_uppercase">NEXT</string>
+
+    <!-- opening hours -->
+    <string name="strOpeningDesc1">General Opening Hours</string>
+    <string name="strOpeningDesc2">Please note that some retailers may vary from these times. Please refer to the Whiteley website for opening hours during public holidays.</string>
+    <string name="strOpeningLaunchWebsite">Launch Whiteley website</string>
+
+    <!-- notification -->
+    <string name="notification_welcome">Welcome to Whiteley!</string>
+    <string name="notification_monster">Find Some Easters</string>
+    <string name="notification_no_favorites">Top Tip!</string>
+    <string name="notification_offer">Offer from %s</string>
+    <string name="notification_bluetooth">When at the centre please turn on your phone\'s Bluetooth to make use of this app\'s iBeacon features.</string>
+    <string name="notification_location">For a better experience, please enable location sharing within the app\'s settings</string>
+    <string name="notification_local_notify">For a better experience, please enable notifications within the app\'s settings</string>
+
+    <string-array name="price_arrays">
+        <item>Nothing</item>
+        <item>under £10</item>
+        <item>under £50</item>
+        <item>over £50</item>
+    </string-array>
+    
+    <string-array name="freq_arrays">
+        <item>Once every few months</item>
+        <item>Once a year</item>
+        <item>Never</item>
+        <item>Everyday</item>
+        <item>Once a week</item>
+        <item>Twice a week</item>
+        <item>Once a month</item>         
+    </string-array>
+</resources>

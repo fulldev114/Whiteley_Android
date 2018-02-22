@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/exit_tooltip"
+        android:paddingLeft="@dimen/margin_normal"
+        android:paddingRight="@dimen/margin_normal"
+        android:paddingBottom="@dimen/margin_normal"
+        android:paddingTop="@dimen/margin_large"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button_exit_keep"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round10_white_1"
+            android:padding="@dimen/margin_medium"
+            android:singleLine="true"
+            android:text="EXIT, BUT KEEP SEARCHING"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontsize4" />
+
+        <Button
+            android:id="@+id/button_exit_stop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round10_white_1"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:padding="@dimen/margin_medium"
+            android:singleLine="true"
+            android:text="EXIT AND STOP SEARCHING"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fontsize4" />
+    </LinearLayout>
+
+</LinearLayout>

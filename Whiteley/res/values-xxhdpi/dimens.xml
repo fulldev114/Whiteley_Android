@@ -1,0 +1,27 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="fontsize_title">22sp</dimen> <!-- 36px -->
+    <dimen name="fontsize1">24sp</dimen> <!-- 48px -->
+    <dimen name="fontsize3">20sp</dimen> <!-- 35, 36px -->
+    <dimen name="fontsize4">18sp</dimen> <!-- 33px -->
+    <dimen name="fontsize2">22sp</dimen> <!-- 40px -->
+    <dimen name="fontsize5">16sp</dimen> <!-- 29, 30px -->
+    <dimen name="fontsize6">14sp</dimen> <!-- 24px -->
+    <dimen name="fontsize7">13dp</dimen> <!-- 24px -->
+
+    <dimen name="margin_minimal">5dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_medium">15dp</dimen>
+    <dimen name="margin_normal">20dp</dimen>
+    <dimen name="margin_25dp">25dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_large">40dp</dimen>
+    <dimen name="margin_extra">60dp</dimen>
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="overlap_region">80dp</dimen>
+    <dimen name="start_height">30dp</dimen>
+    
+</resources>

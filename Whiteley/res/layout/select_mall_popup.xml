@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_rectangle"
+    android:orientation="vertical" >
+
+    <RadioButton
+        android:id="@+id/txt_selectfloor2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin_large"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/selector_mall_bg"
+        android:button="@null"
+        android:gravity="center"
+        android:text="@string/strSelectFloor2"
+        android:textColor="@drawable/selector_font_color1"
+        android:textSize="@dimen/fontsize5" />
+
+    <RadioButton
+        android:id="@+id/txt_selectfloor1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin_large"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/selector_mall_bg"
+        android:button="@null"
+        android:gravity="center"
+        android:text="@string/strSelectFloor1"
+        android:textColor="@drawable/selector_font_color1"
+        android:textSize="@dimen/fontsize5" />
+
+    <RadioButton
+        android:id="@+id/txt_selectfloorground"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/margin_large"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/selector_mall_bg"
+        android:button="@null"
+        android:gravity="center"
+        android:text="@string/strSelectFloorGround"
+        android:textColor="@drawable/selector_font_color1"
+        android:textSize="@dimen/fontsize5" />
+
+</RadioGroup>

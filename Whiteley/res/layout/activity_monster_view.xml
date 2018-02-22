@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_easter_back"
+ >
+
+    <RelativeLayout
+        android:id="@+id/layer_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent" >
+
+        <ImageButton
+            android:id="@+id/button_home"
+            android:layout_width="@dimen/header_height"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="center"
+            android:src="@drawable/icon_home" />
+
+        <com.wai.whiteley.view.GIFView
+            android:id="@+id/gif_searching"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_minimal" />
+
+<!--         <ImageView
+            android:id="@+id/icon_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/monster_logo_s_new" /> -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layer_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layer_header" >
+
+        <RelativeLayout
+            android:id="@+id/view_bottom_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bottom_bar" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="bottom" >
+
+                <Button
+                    android:id="@+id/button_howto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="@dimen/margin_minimal"
+                    android:drawableTop="@drawable/how_to"
+                    android:text="HOW TO"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/fontsize6" />
+
+                <Button
+                    android:id="@+id/button_search"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="@dimen/margin_minimal"
+                    android:drawableTop="@drawable/start_search"
+                    android:text="START SEARCH"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/fontsize6" />
+
+                <LinearLayout
+                    android:id="@+id/button_found"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/count_container_circle" />
+
+                        <TextView
+                            android:id="@+id/text_found_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="1/6"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/fontsize4" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/text_found_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_minimal"
+                        android:text="FOUND"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/fontsize6" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layer_monster_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/view_bottom_bar" >
+
+            <TextView
+                android:id="@+id/txt_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/strMonsterDesc11"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/fontsize4" />
+
+            <GridView
+                android:id="@+id/lst_data"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/txt_desc"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:verticalSpacing="@dimen/margin_normal" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layer_empty_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/view_bottom_bar"
+            android:clickable="true"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txt_empty_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strMonsterDesc6"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/fontsize4" />
+
+            <TextView
+                android:id="@+id/txt_empty_desc_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/strMonsterDesc6_1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/fontsize4" />
+
+            <ImageView
+                android:id="@+id/view_down_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_small"
+                android:src="@drawable/dawn_arrow" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layer_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentTop="true" >
+			 <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/monster_logo_s_new" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false" />
+
+        <ImageButton
+            android:id="@+id/button_close_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@android:color/transparent"
+            android:src="@drawable/monster_icon_close"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

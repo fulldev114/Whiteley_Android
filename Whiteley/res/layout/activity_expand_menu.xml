@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layer_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/header_bg" >
+
+        <ImageView
+            android:id="@+id/icon_home"
+            android:layout_width="@dimen/header_height"
+            android:layout_height="@dimen/header_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_minimal"
+            android:onClick="onHome"
+            android:scaleType="center"
+            android:src="@drawable/icon_home_large" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/header_logo"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/icon_close"
+            android:layout_width="@dimen/header_height"
+            android:layout_height="@dimen/header_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:onClick="onClose"
+            android:scaleType="center"
+            android:src="@drawable/icon_close" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lst_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:divider="@android:color/transparent" />
+
+</LinearLayout>

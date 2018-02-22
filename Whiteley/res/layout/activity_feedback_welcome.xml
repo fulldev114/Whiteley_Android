@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background= "@color/color_fb_back">
+
+    <LinearLayout
+        android:id="@+id/layer_subject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"            
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:text="@string/str_fb_ask"
+            android:textColor="@color/color_fb_text"
+            android:lines="2"
+            android:textSize="@dimen/fontsize5" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/layer_line"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/color_fb_text"
+        android:layout_below ="@id/layer_subject"  
+       	>
+        </View>
+        
+    <LinearLayout
+        android:id="@+id/layer_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_below ="@id/layer_line"
+        >
+		<TextView
+            android:id="@+id/text_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:text="@string/str_fb_content"
+            android:textColor="@android:color/black"
+            android:lines="3"
+            android:textSize="@dimen/fontsize5" />  
+            
+		 <View
+	        android:layout_width="wrap_content"
+	        android:layout_height="1dp"
+	        android:background="@color/color_fb_sep"
+       		>
+        	</View>
+        
+		 <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" 
+	        >
+	        
+		    <TextView
+	            android:id="@+id/text_not_right"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:gravity="center_horizontal"
+	            android:layout_marginTop="@dimen/margin_normal"
+	            android:layout_marginBottom="@dimen/margin_normal"
+	            android:text="@string/str_fb_not_right"
+	            android:textColor="@android:color/black"
+	            android:textSize="@dimen/fontsize5" />  
+	            
+	       <View
+	        	android:layout_width="1dp"
+	        	android:layout_height="match_parent"
+	        	android:background="@color/color_fb_sep"
+       			>
+        		</View>    
+        		 
+	        <TextView
+	            android:id="@+id/text_ok"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"    
+				android:gravity="center_horizontal"       
+	            android:layout_marginTop="@dimen/margin_normal"
+	            android:layout_marginBottom="@dimen/margin_normal"
+	            android:text="@string/str_fb_ok"
+	            android:textColor="@android:color/black"
+	            android:textSize="@dimen/fontsize5" />  
+            </LinearLayout>
+     </LinearLayout>
+
+</RelativeLayout>

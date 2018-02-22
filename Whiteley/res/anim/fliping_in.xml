@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <scale
+        android:duration="@integer/flip_animation_time"
+        android:fillAfter="false"
+        android:fromXScale="0.0"
+        android:fromYScale="0.7"
+        android:interpolator="@android:anim/linear_interpolator"
+        android:startOffset="200"
+        android:toXScale="1.0"
+        android:toYScale="1.0" />
+
+    <translate
+        android:duration="@integer/flip_animation_time"
+        android:fromXDelta="50%"
+        android:startOffset="200"
+        android:toXDelta="0" />
+
+</set>
